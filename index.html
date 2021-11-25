@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SI | MINTIC</title>
+    <script src="js/index.js"></script>
+</head>
+<body style="font-family: Tenor Sans;">
+    <header>
+      <div id="topbar" class="d-flex align-items-center fixed-top">
+        <div class="container d-flex justify-content-between">
+          <div class="contact-info d-flex align-items-center">
+            <i class="bi bi-envelope"></i> <a href="mailto:contact@example.com">contact@example.com</a>
+            <i class="bi bi-phone"></i> +1 5589 55488 55
+          </div>
+          <div class="d-none d-lg-flex social-links align-items-center">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+          </div>
+        </div>
+      </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="img/logo.jpg" class="img-fluid" alt="LOGO"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent" style="position:absolute; right: 100px; top:40px;">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#" style="color: 08376B;">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Registro</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-3 mx-auto">
+                    <form>
+                        <div class="form-grup">
+                            <label for="">Nombre</label>
+                            <input id="nombre" type="text" class="form-control">
+                        </div>
+                        <div class="form-grup">
+                            <label for="">Correo</label>
+                            <input id="mail" type="email" class="form-control">
+                        </div>
+                        <div class="form-grup">
+                            <label for="">Numero</label>
+                            <input id="numero" type="text" class="form-control">
+                        </div>
+                        <div class="form-grup">
+                            <label for="">Contraseña</label>
+                            <input id="password" type="password" class="form-control">
+                        </div>
+                        <div class="mt-2">
+                            <button type="button" class="btn btn-outline-primary" onclick="guardar()">Guardar</button>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" onclick="listar()">Listar</button>
+                        </div>
+                    </form>
+                </div>
+
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Empleados</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <thead>
+              <tr>
+                <th> Nombre</th>
+                <th> Correo</th>
+                <th> Numero</th>
+                <th> Contraseña</th>
+              </tr>
+            </thead>
+            <tbody id="listado">
+
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+        
+</html>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script src="js/bootstrap.bundle.min.js"></script>
